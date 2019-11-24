@@ -1,0 +1,12 @@
+<!-- templates/home.html -->
+<header>
+  <a href="{% url 'select' %}">Select</a><br />
+  <a href="{% url 'post_new' %}">Post</a>
+</header>
+<br /><br /><br /><br />
+
+<ul>
+  {% for post in key2select %}
+  <li>{{ post.keyone }}&nbsp &nbsp{{ post.text }}</li>
+  {% endfor %}
+</ul>
